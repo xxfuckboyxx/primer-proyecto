@@ -5,5 +5,5 @@ export interface Computadoras {
     ram:number;
     almacenamiento:number;
     tipodealmacenamiento:string;
-    espaciodegrafica:number;
+    grafica:string;
 }

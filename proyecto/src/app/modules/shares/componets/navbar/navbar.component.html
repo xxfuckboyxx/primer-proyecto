@@ -1,1 +1,43 @@
 <p>navbar works!</p>
+<mat-toolbar>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+
+      <mat-icon>menu</mat-icon>
+
+    </button>
+    
+    <span>My App</span>
+<button mat-button routerLink="/inicio"></button>
+
+<button mat-button [matMenuTriggerFor]="producto">productos</button>
+<mat-menu #producto="matMenu">
+  <button mat-menu-item routerLink="/productos">general</button>
+  <button mat-menu-item routerLink="/procesadores">procesadores</button>
+  <button mat-menu-item routerLink="/placas-madres">placa madres</button>
+  
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="producto">productos</button>
+<mat-menu #producto="matMenu">
+  <button mat-menu-item routerLink="/graficas">placa grafica</button>
+  <button mat-menu-item routerLink="/rams">ram</button>
+  <button mat-menu-item routerLink="/pc-armadas">pc armadas</button>
+</mat-menu>
+
+    <span class="example-spacer"></span>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+      <mat-icon>favorite</mat-icon>
+
+    </button>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+
+      <mat-icon>share</mat-icon>
+
+    </button>
+
+  </mat-toolbar>
+  
