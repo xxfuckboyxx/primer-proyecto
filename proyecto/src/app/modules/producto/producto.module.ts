@@ -2,24 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductoRoutingModule } from './producto-routing.module';
-import { ProductoComponent } from './page/producto/producto.component';
-import { ProcesadoresComponent } from './page/procesadores/procesadores.component';
-import { PlacamadreComponent } from './page/placamadre/placamadre.component';
-import { RamComponent } from './page/ram/ram.component';
-import { GraficaComponent } from './page/grafica/grafica.component';
-import { FuentesComponent } from './page/fuentes/fuentes.component';
-import { PcArmadasComponent } from './page/pc-armadas/pc-armadas.component';
+
+// VISTAS DEL MÓDULO PRODUCTO
+import { ProductoComponent } from './pages/producto/producto.component';
+import { AlimentacionComponent } from './pages/alimentacion/alimentacion.component';
+import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
+import { JugueteComponent } from './pages/juguete/juguete.component';
 
 
 @NgModule({
   declarations: [
     ProductoComponent,
-    ProcesadoresComponent,
-    PlacamadreComponent,
-    RamComponent,
-    GraficaComponent,
-    FuentesComponent,
-    PcArmadasComponent
+    AlimentacionComponent,
+    IndumentariaComponent,
+    JugueteComponent
   ],
   imports: [
     CommonModule,

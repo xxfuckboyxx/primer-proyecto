@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-import { Computadoras } from 'src/app/models/computadoras';
+// IMPORTAMOS INTERFAZ
+import { Animal } from 'src/app/models/animal';
 
 @Component({
   selector: 'app-card',
@@ -8,54 +8,35 @@ import { Computadoras } from 'src/app/models/computadoras';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  public info: Computadoras[];
-  constructor() {
-    this.info = [
-{
-id: "",
-imagen: "",
-procesador: "i3-7100",
-ram: 16,
-almacenamiento: 500,
-tipodealmacenamiento: "ssd",
-grafica: "GT730"
-},
-{
-id: "",
-imagen: "",
-procesador: "i7-7700",
-ram: 32,
-almacenamiento: 1000,
-tipodealmacenamiento: "ssd",
-grafica: "GTX1650"
-},
-{
-id: "",
-imagen: "",
-procesador: "i3-7100",
-ram: 16,
-almacenamiento: 500,
-tipodealmacenamiento: "ssd",
-grafica: "GT730"
-},
-{
-id: "",
-imagen: "",
-procesador: "i3-7100",
-ram: 16,
-almacenamiento: 500,
-tipodealmacenamiento: "ssd",
-grafica: "GT730"
-},
-{
-id: "",
-imagen: "",
-procesador: "i3-7100",
-ram: 16,
-almacenamiento: 500,
-tipodealmacenamiento: "ssd",
-grafica: "GT730"
-}
-]
-}
+   // PROPIEDAD PÚBLICA (TIPO: ARRAY)
+   public info: Animal[];
+  
+   constructor(){
+     this.info = [
+       {
+         id: "",
+         nombre: "Chanchito",
+         raza: "Cerdo",
+         edad: 5,
+         imagen: "https://i1.sndcdn.com/artworks-000190784980-i4qoly-t500x500.jpg",
+         alt: "Chanchito"
+       },
+       {
+         id: "",
+         nombre: "Perro",
+         raza: "Border Collie",
+         edad: 6,
+         imagen: "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1371102402-645cff2ca5a62.jpg?crop=0.665xw:1.00xh;0.224xw,0&resize=1200:*",
+         alt: "Border Collie"
+       },
+       {
+         id: "",
+         nombre: "Pepe",
+         raza: "Gato",
+         edad: 2,
+         imagen: "https://i0.wp.com/puppis.blog/wp-content/uploads/2022/02/abc-cuidado-de-los-gatos-min.jpg?resize=521%2C346&ssl=1",
+         alt: "Gatito"
+       }
+     ]
+   }
 }

@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 
+// RUTAS HIJAS DEL MÓDULO INICIO
 const routes: Routes = [
-{path:"",component:InicioComponent},
-{path:"inicio",component:InicioComponent}
+  {
+    path:"",component: InicioComponent
+  },
+  {
+    path:"inicio",component: InicioComponent
+  }
 ];
-
-//rutas hijas del modulo inicio
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

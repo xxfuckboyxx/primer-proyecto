@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { NavbarComponent } from '../shares/componets/navbar/navbar.component';
-import { FooterComponent } from '../shares/componets/footer/footer.component';
-import {MatMenuModule} from '@angular/material/menu';
 
+// COMPONENTES LOCALES
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+// COMPONENTES DE MATERIAL
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+
+// ACCEDEMOS A TODAS LAS RUTAS DEL PROYECTO
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
@@ -17,16 +22,18 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   imports: [
     CommonModule,
     AppRoutingModule,
-    MatToolbarModule,
-    MatMenuModule,
+    MatIconModule,
     MatButtonModule,
-    MatIconModule
+    MatToolbarModule,
+    MatMenuModule
   ],
-  exports:[
-  NavbarComponent,
-  FooterComponent,
-  MatButtonModule,
-  MatToolbarModule
+  exports: [
+    NavbarComponent,
+    FooterComponent,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatMenuModule
   ]
 })
 export class SharedModule { }

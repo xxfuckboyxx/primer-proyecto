@@ -1,34 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductoComponent } from './page/producto/producto.component';
-import { PlacamadreComponent } from './page/placamadre/placamadre.component';
-import { RamComponent } from './page/ram/ram.component';
-import { GraficaComponent } from './page/grafica/grafica.component';
-import { FuentesComponent } from './page/fuentes/fuentes.component';
-import { PcArmadasComponent } from './page/pc-armadas/pc-armadas.component';
+
+// TODAS LAS VISTAS DEL MÓDULO PRODUCTO
+import { ProductoComponent } from './pages/producto/producto.component';
+import { AlimentacionComponent } from './pages/alimentacion/alimentacion.component';
+import { IndumentariaComponent } from './pages/indumentaria/indumentaria.component';
+import { JugueteComponent } from './pages/juguete/juguete.component';
 
 const routes: Routes = [
   {
-    path:"productos",component:ProductoComponent
+    path:"producto",component:ProductoComponent
   },
   {
-    path:"procesadores",component:PlacamadreComponent
+    path:"alimentacion",component:AlimentacionComponent
   },
   {
-    path:"placas-madres",component:PlacamadreComponent
+    path:"indumentaria",component:IndumentariaComponent
   },
   {
-    path:"rams",component:RamComponent
-  },
-  {
-    path:"graficas",component:GraficaComponent
-  },
-  {
-    path:"fuentes",component:FuentesComponent
-  },
-  {
-    path:"pc-armadas",component:PcArmadasComponent
-  },
+    path:"juguetes",component:JugueteComponent
+  }
 ];
 
 @NgModule({
